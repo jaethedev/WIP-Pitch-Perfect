@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		0BB944462083B9B40053D393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB944452083B9B40053D393 /* AppDelegate.swift */; };
-		0BB944482083B9B40053D393 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB944472083B9B40053D393 /* ViewController.swift */; };
+		0BB944482083B9B40053D393 /* RecordVoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB944472083B9B40053D393 /* RecordVoiceViewController.swift */; };
 		0BB9444B2083B9B40053D393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BB944492083B9B40053D393 /* Main.storyboard */; };
 		0BB9444D2083B9B40053D393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BB9444C2083B9B40053D393 /* Assets.xcassets */; };
 		0BB944502083B9B40053D393 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BB9444E2083B9B40053D393 /* LaunchScreen.storyboard */; };
+		0BB944582083BD400053D393 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB944572083BD400053D393 /* AudioEngine.swift */; };
+		0BB9445A2083BD670053D393 /* AudioErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB944592083BD670053D393 /* AudioErrors.swift */; };
+		0BB9445C2083BD770053D393 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB9445B2083BD770053D393 /* AudioPlayer.swift */; };
+		0BB9445E2083BDA20053D393 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB9445D2083BDA20053D393 /* PlaySoundsViewController.swift */; };
+		0BB944602083BE670053D393 /* AudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB9445F2083BE670053D393 /* AudioSession.swift */; };
+		0BB944622083BEB60053D393 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB944612083BEB60053D393 /* AudioRecorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BB944422083B9B40053D393 /* Pitch Pefect Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Pefect Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BB944452083B9B40053D393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0BB944472083B9B40053D393 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0BB944472083B9B40053D393 /* RecordVoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVoiceViewController.swift; sourceTree = "<group>"; };
 		0BB9444A2083B9B40053D393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BB9444C2083B9B40053D393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BB9444F2083B9B40053D393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BB944512083B9B40053D393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BB944572083BD400053D393 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		0BB944592083BD670053D393 /* AudioErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioErrors.swift; sourceTree = "<group>"; };
+		0BB9445B2083BD770053D393 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		0BB9445D2083BDA20053D393 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		0BB9445F2083BE670053D393 /* AudioSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSession.swift; sourceTree = "<group>"; };
+		0BB944612083BEB60053D393 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +67,27 @@
 			isa = PBXGroup;
 			children = (
 				0BB944452083B9B40053D393 /* AppDelegate.swift */,
-				0BB944472083B9B40053D393 /* ViewController.swift */,
+				0BB944472083B9B40053D393 /* RecordVoiceViewController.swift */,
 				0BB944492083B9B40053D393 /* Main.storyboard */,
 				0BB9444C2083B9B40053D393 /* Assets.xcassets */,
 				0BB9444E2083B9B40053D393 /* LaunchScreen.storyboard */,
 				0BB944512083B9B40053D393 /* Info.plist */,
+				0BB944632083C2FF0053D393 /* Audio Components */,
+				0BB9445D2083BDA20053D393 /* PlaySoundsViewController.swift */,
 			);
 			path = "Pitch Pefect Project";
+			sourceTree = "<group>";
+		};
+		0BB944632083C2FF0053D393 /* Audio Components */ = {
+			isa = PBXGroup;
+			children = (
+				0BB944572083BD400053D393 /* AudioEngine.swift */,
+				0BB944592083BD670053D393 /* AudioErrors.swift */,
+				0BB9445B2083BD770053D393 /* AudioPlayer.swift */,
+				0BB9445F2083BE670053D393 /* AudioSession.swift */,
+				0BB944612083BEB60053D393 /* AudioRecorder.swift */,
+			);
+			path = "Audio Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +162,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BB944482083B9B40053D393 /* ViewController.swift in Sources */,
+				0BB944582083BD400053D393 /* AudioEngine.swift in Sources */,
+				0BB944482083B9B40053D393 /* RecordVoiceViewController.swift in Sources */,
+				0BB9445C2083BD770053D393 /* AudioPlayer.swift in Sources */,
 				0BB944462083B9B40053D393 /* AppDelegate.swift in Sources */,
+				0BB9445E2083BDA20053D393 /* PlaySoundsViewController.swift in Sources */,
+				0BB9445A2083BD670053D393 /* AudioErrors.swift in Sources */,
+				0BB944622083BEB60053D393 /* AudioRecorder.swift in Sources */,
+				0BB944602083BE670053D393 /* AudioSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
