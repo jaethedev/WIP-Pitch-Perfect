@@ -14,4 +14,5 @@ enum AudioError: Error {
     case couldntRecordAudio
     case sessionStillActive
     case playbackFailed
+    case startEngineFailed
 }
