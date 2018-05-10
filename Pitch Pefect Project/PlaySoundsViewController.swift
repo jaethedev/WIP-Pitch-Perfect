@@ -12,9 +12,6 @@ import AVFoundation
 
 
 
-//TODO: Pass Recording to Play Sounds Controller
-
-
 class PlaySoundsViewController: UIViewController{
     var audioPlayer: AVAudioPlayer?
     var audioFile: URL?
@@ -25,19 +22,17 @@ class PlaySoundsViewController: UIViewController{
     
     
     @IBOutlet weak var chipmunkButton: UIButton!
-    
     @IBOutlet weak var darthVaderButton: UIButton!
-    
     @IBOutlet weak var echoButton: UIButton!
-    
     @IBOutlet weak var fastButton: UIButton!
-    
     @IBOutlet weak var reverbButton: UIButton!
-    
     @IBOutlet weak var slowButton: UIButton!
-    
-    
     @IBOutlet weak var stopButton: UIButton!
+    
+    
+    @IBAction func stopButtonPressed(_ sender: UIButton){
+        stopAudio()
+    }
     
     enum buttonEffect: Int {
         case chipmunk = 1
@@ -65,9 +60,9 @@ class PlaySoundsViewController: UIViewController{
             playSound(rate: 0.5)
         }
         configureUI(playState: .playing)
-
+        
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         configureUI(playState: .notPlaying)
     }
@@ -106,5 +101,5 @@ class PlaySoundsViewController: UIViewController{
         echoButton.isEnabled = enabled
         reverbButton.isEnabled = enabled
     }
-
+    
 }

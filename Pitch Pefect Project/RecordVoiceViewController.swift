@@ -21,8 +21,6 @@ class RecordVoiceViewController: UIViewController, AVAudioRecorderDelegate{
     
     
     var audioRecorder: AVAudioRecorder?
-    var audioEngine: AVAudioEngine?
-    var audioMixer: AVAudioMix?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +55,7 @@ class RecordVoiceViewController: UIViewController, AVAudioRecorderDelegate{
         }
     }
     
-    //Helper Methods
+    //MARK: Helper Methods
     
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
