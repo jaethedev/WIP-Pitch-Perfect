@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7J9-ZS-Y2b">
-    <device id="retina5_5" orientation="landscape">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,20 +15,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="RecordVoiceViewController" customModule="Pitch_Pefect_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="370"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="P1N-bh-6D1">
-                                <rect key="frame" x="215.33333333333334" y="0.0" width="305.66666666666663" height="370"/>
+                                <rect key="frame" x="34.5" y="0.0" width="306" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording is in Progress..." textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCQ-o5-EOE">
-                                        <rect key="frame" x="0.0" y="0.0" width="305.66666666666669" height="123.33333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="306" height="201"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="28"/>
                                         <color key="textColor" red="0.13725490196078433" green="0.29019607843137257" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="248" verticalHuggingPriority="247" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFU-f6-xKx">
-                                        <rect key="frame" x="52.999999999999972" y="123.33333333333334" width="200" height="123.33333333333334"/>
+                                        <rect key="frame" x="53" y="201" width="200" height="201"/>
                                         <state key="normal" image="microphone2x-iphone">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -37,7 +37,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVU-Vu-A6T">
-                                        <rect key="frame" x="102.99999999999997" y="246.66666666666671" width="100" height="123.33333333333334"/>
+                                        <rect key="frame" x="103" y="402" width="100" height="201"/>
                                         <state key="normal" image="stop2x-iphone">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -73,11 +73,11 @@
             <objects>
                 <viewController id="C23-Da-X9s" customClass="PlaySoundsViewController" customModule="Pitch_Pefect_Project" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lgZ-CB-L9N">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="370"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nv0-ex-U1N" userLabel="Play Button">
-                                <rect key="frame" x="318" y="250" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="483" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="8q9-t5-b3l"/>
                                     <constraint firstAttribute="height" constant="100" id="aJO-k2-Uwl"/>
@@ -88,13 +88,13 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WGr-fO-91w">
-                                <rect key="frame" x="8" y="8" width="720" height="242"/>
+                                <rect key="frame" x="8" y="8" width="359" height="475"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BNG-Ee-Iwk">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="242"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="158.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="6" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tI-nP-j0D" userLabel="Slow Button">
-                                                <rect key="frame" x="0.0" y="21" width="120" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="158.5"/>
                                                 <color key="tintColor" red="0.86722369187138049" green="0.97680455450000003" blue="0.89461890752853535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" image="slow2x-iphone"/>
                                                 <connections>
@@ -102,7 +102,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtG-o8-LXo" userLabel="Echo Button">
-                                                <rect key="frame" x="120" y="21" width="120" height="200"/>
+                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="158.5"/>
                                                 <color key="tintColor" red="0.86722369187138049" green="0.97680455450000003" blue="0.89461890752853535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" image="echo"/>
                                                 <connections>
@@ -116,10 +116,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hQ5-qz-QOc">
-                                        <rect key="frame" x="240" y="0.0" width="240" height="242"/>
+                                        <rect key="frame" x="0.0" y="158.5" width="359" height="158"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maY-oP-htt" userLabel="Chipmunk Button">
-                                                <rect key="frame" x="0.0" y="21" width="120" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="158"/>
                                                 <color key="backgroundColor" red="0.97680455450000003" green="0.89780863636753505" blue="0.68803754572136211" alpha="0.01" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.86722369187138049" green="0.97680455450000003" blue="0.89461890752853535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" image="chipmunk2x-iphone"/>
@@ -128,7 +128,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aui-Fi-Pqd" userLabel="Fast Button">
-                                                <rect key="frame" x="120" y="21" width="120" height="200"/>
+                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="158"/>
                                                 <state key="normal" image="fast2x-iphone"/>
                                                 <connections>
                                                     <action selector="soundEffectButtonPressed:" destination="C23-Da-X9s" eventType="touchUpInside" id="HB7-C0-QcQ"/>
@@ -141,10 +141,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kmz-V8-faO">
-                                        <rect key="frame" x="480" y="0.0" width="240" height="242"/>
+                                        <rect key="frame" x="0.0" y="316.5" width="359" height="158.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yp7-aY-ul9" userLabel="Reverb Button">
-                                                <rect key="frame" x="0.0" y="21" width="120" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="158.5"/>
                                                 <color key="tintColor" red="0.86722369187138049" green="0.97680455450000003" blue="0.89461890752853535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" image="reverb"/>
                                                 <connections>
@@ -152,7 +152,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJi-VS-yD1" userLabel="Darth Vader Button">
-                                                <rect key="frame" x="120" y="21" width="120" height="200"/>
+                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="158.5"/>
                                                 <color key="tintColor" red="0.86722369187138049" green="0.97680455450000003" blue="0.89461890752853535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" image="darthvader2x-iphone"/>
                                                 <connections>
@@ -206,7 +206,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7J9-ZS-Y2b" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="nEp-Ak-y6v">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

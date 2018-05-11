@@ -64,6 +64,12 @@ class PlaySoundsViewController: UIViewController{
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        let buttonArray = [chipmunkButton,darthVaderButton, echoButton, fastButton, reverbButton, slowButton]
+        
+        for button in buttonArray {
+            button?.imageView?.contentMode = .scaleAspectFit
+        }
+
         configureUI(playState: .notPlaying)
     }
     

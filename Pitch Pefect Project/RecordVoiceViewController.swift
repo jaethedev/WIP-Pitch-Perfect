@@ -27,6 +27,7 @@ class RecordVoiceViewController: UIViewController, AVAudioRecorderDelegate{
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        recordButton.imageView?.contentMode = .scaleAspectFit
         configureUI(.startRecording)
     }
     
